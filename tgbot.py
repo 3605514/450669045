@@ -9,7 +9,7 @@ SHEET_ID = '1khEnQ392mtaiDLASitShRNRluYZYH5STDnln4oHnCpc'  # ID Google табл�
 
 # Авторизация в Google Sheets
 scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-creds = Credentials.from_service_account_file("/root/my_telegram_bot1/gentle-scene-439821-t8-eab32ae13bb6.json", scopes=scopes)
+creds = Credentials.from_service_account_file("/root/telega1_bot/gentle-scene-439821-t8-eab32ae13bb6.json", scopes=scopes)
 client = gspread.authorize(creds)
 sheet = client.open_by_key(SHEET_ID).sheet1
 
